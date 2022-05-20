@@ -17,6 +17,9 @@ export class DirectivaNgForComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.proveedores.push({nombre: 'PepePhone', cif: 'A62368789', localidad: 'Cáceres'});
+    }, 3000)
   }
 
 }

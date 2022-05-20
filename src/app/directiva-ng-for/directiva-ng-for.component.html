@@ -1,1 +1,17 @@
-<p>directiva-ng-for works!</p>
+<div class="card">
+    <h1>Ejemplo de directiva *ngFor</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nombre</th>
+            <th>CIF</th>
+            <th>Localidad</th>
+        </tr>
+        <tr *ngFor="let proveedor of proveedores">
+            <td></td>
+            <td>{{proveedor.nombre}}</td>
+            <td>{{proveedor.cif}}</td>
+            <td>{{proveedor.localidad}}</td>
+        </tr>
+    </table>
+</div>
